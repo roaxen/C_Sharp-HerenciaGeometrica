@@ -9,7 +9,8 @@ namespace HerenciaGeometrica
     public class Circulo: Forma
     {
         double radio;
- 
+        public double Radio { get => radio; set => radio = value; }
+
         public Circulo (double radio ) :base("Circulo")
         {
             this.radio = radio;

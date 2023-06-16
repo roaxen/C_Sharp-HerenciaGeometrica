@@ -10,7 +10,7 @@ namespace HerenciaGeometrica
     {
         private String nombre;
 
-      
+        public string Nombre { get => nombre; set => nombre = value; }
 
         public Forma(String nombre)
         { 
@@ -21,8 +21,7 @@ namespace HerenciaGeometrica
         {
             this.Nombre = null;
         }
-        public string Nombre { get => nombre; set => nombre = value; }
-        
+     
         public abstract Double GetArea();
 
         public abstract Double GetPerimetro();

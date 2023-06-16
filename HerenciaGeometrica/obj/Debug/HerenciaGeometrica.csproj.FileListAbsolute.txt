@@ -6,3 +6,11 @@ C:\Users\Manu\source\repos\HerenciaGeometrica\HerenciaGeometrica\obj\Debug\Heren
 C:\Users\Manu\source\repos\HerenciaGeometrica\HerenciaGeometrica\obj\Debug\HerenciaGeometrica.csproj.CoreCompileInputs.cache
 C:\Users\Manu\source\repos\HerenciaGeometrica\HerenciaGeometrica\obj\Debug\HerenciaGeometrica.exe
 C:\Users\Manu\source\repos\HerenciaGeometrica\HerenciaGeometrica\obj\Debug\HerenciaGeometrica.pdb
+C:\Users\Manu\Source\Repos\C_Sharp-HerenciaGeometrica\HerenciaGeometrica\bin\Debug\HerenciaGeometrica.exe.config
+C:\Users\Manu\Source\Repos\C_Sharp-HerenciaGeometrica\HerenciaGeometrica\bin\Debug\HerenciaGeometrica.exe
+C:\Users\Manu\Source\Repos\C_Sharp-HerenciaGeometrica\HerenciaGeometrica\bin\Debug\HerenciaGeometrica.pdb
+C:\Users\Manu\Source\Repos\C_Sharp-HerenciaGeometrica\HerenciaGeometrica\obj\Debug\HerenciaGeometrica.csproj.AssemblyReference.cache
+C:\Users\Manu\Source\Repos\C_Sharp-HerenciaGeometrica\HerenciaGeometrica\obj\Debug\HerenciaGeometrica.csproj.SuggestedBindingRedirects.cache
+C:\Users\Manu\Source\Repos\C_Sharp-HerenciaGeometrica\HerenciaGeometrica\obj\Debug\HerenciaGeometrica.csproj.CoreCompileInputs.cache
+C:\Users\Manu\Source\Repos\C_Sharp-HerenciaGeometrica\HerenciaGeometrica\obj\Debug\HerenciaGeometrica.exe
+C:\Users\Manu\Source\Repos\C_Sharp-HerenciaGeometrica\HerenciaGeometrica\obj\Debug\HerenciaGeometrica.pdb

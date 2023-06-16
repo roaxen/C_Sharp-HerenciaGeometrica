@@ -17,17 +17,11 @@ namespace HerenciaGeometrica
             opcion = int.Parse(Console.ReadLine());
 
             if (opcion == 1)
-            {
                 CreacionFormasAuto();
-            }
             else if (opcion == 2)
-            {
                 CreacionFormasConsola();
-            }
             else
-            {
                 Console.WriteLine("Opcion no permitida, CERRANDO PROGRAMA");
-            }
 
             Console.WriteLine("\nPulse una tecla para cerrar .... ");
             Console.ReadLine();
@@ -49,7 +43,6 @@ namespace HerenciaGeometrica
                 {
                     case 0:
                         seguirCreandoFormas = false;
-
                         break;
 
                     case 1:
@@ -60,13 +53,11 @@ namespace HerenciaGeometrica
                     case 2:
                         diagrama.Add(new Rectangulo(rand.Next(), rand.Next()));
                         Console.WriteLine("Se ha creado un Rectangulo ");
-
                         break;
 
                     case 3:
                         diagrama.Add(new Rombo(rand.Next(), rand.Next()));
                         Console.WriteLine("Se ha creado un Rombo ");
-
                         break;
 
                     default:
@@ -82,15 +73,11 @@ namespace HerenciaGeometrica
 
             List<Forma> diagrama = new List<Forma>();
             int opcion;
-            bool seguirCreandoFormas = true;
-            
 
             Console.WriteLine("\t INICIANDO PROGRAMA: Creacion de Diagrama de formas");
 
-            while (seguirCreandoFormas)
+            while (true)
             {
-                Console.WriteLine("Que quieres Crear ? ");
-
                 opcion = MenuFormasCreacion();
 
                 if (opcion != 0)
@@ -99,7 +86,7 @@ namespace HerenciaGeometrica
                     diagrama.Add(objetoCreado);
                 }
                 else
-                    seguirCreandoFormas = false;
+                    break;
             }
 
             CalculoTotal(diagrama);
@@ -120,7 +107,6 @@ namespace HerenciaGeometrica
             Console.WriteLine("\nHas creado un totdal de " + diagrama.Count() + " figuras");
             Console.WriteLine("\tEl area total es de : " + areaTotal);
             Console.WriteLine("\tEl perimetro total es de : " + perimetroTotal);
-
         }
 
 
@@ -129,6 +115,8 @@ namespace HerenciaGeometrica
             List<string> nombreFormas = new List<string> { "Circulo", "Rectangulo", "Rombo" };
             int opcion = 0;
 
+            Console.WriteLine("Que quieres Crear ? ");
+
             for (int i = 0; i < nombreFormas.Count; i++)
             {
                 Console.WriteLine(i + 1 + ")    " + nombreFormas[i]);
@@ -136,8 +124,8 @@ namespace HerenciaGeometrica
 
             Console.WriteLine(0 + ")    Calcular el Area y Perimetro Total");
             opcion = int.Parse(Console.ReadLine());
+            
             return opcion;
-
         }
 
 
@@ -146,7 +134,6 @@ namespace HerenciaGeometrica
             Forma formaCreda = null;
             switch (opcion)
             {
-
                 case 1:
                     formaCreda = CreacionCirculo();
                     break;
@@ -165,15 +152,13 @@ namespace HerenciaGeometrica
             }
 
             return formaCreda;
-
         }
 
         public static Circulo CreacionCirculo()
         {
             double radio;
 
-            Console.WriteLine("Necesito " +
-                "el Radio");
+            Console.WriteLine("Necesito el Radio");
             Console.WriteLine("Radio :");
             radio = double.Parse(Console.ReadLine());
 
@@ -185,8 +170,7 @@ namespace HerenciaGeometrica
             double LadoLargo;
             double LadoCorto;
 
-            Console.WriteLine("Necesito el Lado" +
-                " grande y el Lado Corto ");
+            Console.WriteLine("Necesito el Lado grande y el Lado Corto ");
             Console.WriteLine("Lado grande :");
             LadoLargo = double.Parse(Console.ReadLine());
             Console.WriteLine("Lado Corto :");
@@ -208,9 +192,5 @@ namespace HerenciaGeometrica
 
             return new Rombo(diagonalMayor, diagonalMenor);
         }
-
-
-
-
     }
 }

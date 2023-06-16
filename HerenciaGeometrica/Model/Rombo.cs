@@ -8,22 +8,26 @@ namespace HerenciaGeometrica
 {
     public class Rombo: Poligono
     {
-        Double diagonalMayor;
-        Double diagonalMenor;
+        double diagonalMayor;
+        double diagonalMenor;
+
+        public double DiagonalMayor { get => diagonalMayor; set => diagonalMayor = value; }
+        public double DiagonalMenor { get => diagonalMenor; set => diagonalMenor = value; }
+
         public Rombo(double diagonalMayor, double diagonalMenor) : base("Rombo", 4)
         {
-            this.diagonalMayor = diagonalMayor;
-            this.diagonalMenor = diagonalMenor;
+            this.DiagonalMayor = diagonalMayor;
+            this.DiagonalMenor = diagonalMenor;
         }
 
         public override double GetArea()
         {
-            return (diagonalMayor * diagonalMenor) / 2;
+            return (DiagonalMayor * DiagonalMenor) / 2;
         }
 
         public override double GetPerimetro()
         {
-            return 2 * Math.Sqrt( Math.Pow(diagonalMayor, 2) + Math.Pow(diagonalMenor, 2));
+            return 2 * Math.Sqrt( Math.Pow(DiagonalMayor, 2) + Math.Pow(DiagonalMenor, 2));
         }
     }
 }
